@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Indi from './Indi';
+import Add from './Add';
 
 class List extends React.Component{
   constructor(props){
@@ -23,6 +24,7 @@ render(){
         {(this.state.items.map(i=>{
         return   <Indi pass={i} key={i.id} /> 
         }))}
+        <Add />
       </div>
   )
 }
